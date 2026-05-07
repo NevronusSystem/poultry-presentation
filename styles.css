@@ -20,6 +20,7 @@ body {
     background-color: var(--bg-color);
     color: var(--text-color);
     overflow: hidden; /* Hide scrollbars during presentation */
+    font-size: 1.2rem; /* Increased base font size */
 }
 
 .presentation-container {
@@ -37,7 +38,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 6px;
+    height: 8px; /* Slightly thicker progress bar */
     background: rgba(0,0,0,0.05);
     z-index: 100;
 }
@@ -51,13 +52,13 @@ body {
 
 .slide {
     position: absolute;
-    width: 90%;
-    max-width: 1100px;
-    height: 85%;
+    width: 95%; /* More width coverage */
+    max-width: 1300px; /* Increased max-width */
+    height: 90%; /* More height coverage */
     background: var(--card-bg);
-    border-radius: 20px;
+    border-radius: 24px;
     box-shadow: var(--shadow);
-    padding: 2.5rem;
+    padding: 3.5rem; /* More breathing room */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -79,24 +80,24 @@ body {
 }
 
 .app-icon {
-    width: 150px;
-    height: 150px;
-    border-radius: 30px;
-    margin-bottom: 2rem;
+    width: 180px;
+    height: 180px;
+    border-radius: 40px;
+    margin-bottom: 2.5rem;
     box-shadow: var(--shadow);
 }
 
 .hero-title {
-    font-size: 4rem;
+    font-size: 5.5rem; /* Significantly larger */
     color: var(--primary-color);
-    margin-bottom: 0.5rem;
-    font-weight: 700;
+    margin-bottom: 0.8rem;
+    font-weight: 800;
 }
 
 /* Data Layouts */
 .split-layout {
     display: flex;
-    gap: 2rem;
+    gap: 4rem; /* More gap */
     width: 100%;
     align-items: center;
 }
@@ -113,14 +114,14 @@ body {
 
 /* Phone Mockup - Standardized Large Size */
 .phone-mockup, .mini-phone {
-    width: 320px;
+    width: 360px; /* Slightly wider */
     height: 100%;
-    max-height: 850px;
-    border: 12px solid #333;
-    border-radius: 45px;
+    max-height: 620px; /* Taller */
+    border: 14px solid #333;
+    border-radius: 50px;
     overflow: hidden;
     background: #000;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    box-shadow: 0 25px 50px rgba(0,0,0,0.2);
     position: relative;
     flex-shrink: 0;
 }
@@ -129,7 +130,7 @@ body {
     width: 100%;
     height: 100%;
     background: white;
-    overflow-y: hidden; /* Prevent inner scrollbars showing */
+    overflow-y: hidden;
 }
 
 .phone-screen img {
@@ -142,10 +143,10 @@ body {
 /* AdMob Scrollable */
 .admob-scroll-frame {
     width: 100%;
-    height: 350px;
+    height: 450px; /* Larger scroll frame */
     overflow-y: auto;
-    border: 1px solid #ddd;
-    border-radius: 12px;
+    border: 2px solid #ddd;
+    border-radius: 16px;
     background: #f0f0f0;
 }
 
@@ -159,30 +160,39 @@ body {
 .media-extended-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1.5rem;
+    gap: 2.5rem;
     width: 100%;
 }
 
 .media-sub-grid {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .media-card {
     background: #f9f9f9;
-    padding: 1.2rem;
-    border-radius: 12px;
+    padding: 2rem; /* Larger padding */
+    border-radius: 16px;
     text-align: center;
     border: 1px solid #eee;
+}
+
+.media-card h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.media-card p {
+    font-size: 1.4rem;
 }
 
 .news-box {
     background: white;
     border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 1rem;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    border-radius: 14px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     text-align: left;
 }
 
@@ -190,31 +200,31 @@ body {
     font-weight: 700;
     color: #c62828;
     text-transform: uppercase;
-    font-size: 0.75rem;
-    letter-spacing: 1px;
-    margin-bottom: 0.3rem;
+    font-size: 1rem; /* Larger */
+    letter-spacing: 1.2px;
+    margin-bottom: 0.6rem;
     display: block;
 }
 
 .news-head {
-    font-size: 1rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-    line-height: 1.3;
+    font-size: 1.3rem; /* Larger */
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 1.4;
 }
 
 .news-link {
-    font-size: 0.8rem;
+    font-size: 1.1rem;
     color: var(--primary-color);
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 /* Marketing Ecosystem Layout */
 .ecosystem-container {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 2.5rem;
     width: 100%;
     height: 100%;
 }
@@ -222,7 +232,7 @@ body {
 .tools-list {
     display: flex;
     flex-direction: row;
-    gap: 1.5rem;
+    gap: 2rem;
     width: 100%;
     flex-shrink: 0;
 }
@@ -230,20 +240,21 @@ body {
 .tool-card {
     flex: 1;
     background: #f1f8e9;
-    padding: 0.8rem;
-    border-radius: 10px;
-    border-left: 5px solid var(--primary-color);
-    font-size: 0.9rem;
+    padding: 1.5rem; /* Larger padding */
+    border-radius: 16px;
+    border-left: 8px solid var(--primary-color);
+    font-size: 1.1rem; /* Larger font */
 }
 
 .tool-card h4 {
     color: var(--primary-color);
-    margin-bottom: 0.1rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
 }
 
 .ecosystem-visuals {
     display: flex;
-    gap: 3rem;
+    gap: 4rem;
     justify-content: center;
     align-items: flex-start;
     width: 100%;
@@ -252,7 +263,7 @@ body {
 }
 
 .mini-phone {
-    /* Styles inherited from shared class with .phone-mockup */
+    /* Shared with .phone-mockup */
 }
 
 .phone-screen img {
@@ -262,42 +273,59 @@ body {
     display: block;
 }
 
+/* Original Styles Restored/Maintained */
+.hero-subtitle {
+    font-size: 2.2rem; /* Significantly larger */
+    color: var(--secondary-color);
+    font-weight: 400;
+    margin-bottom: 2.5rem;
+}
+
+.slide-title {
+    font-size: 3.5rem; /* Significantly larger */
+    color: var(--primary-color);
+    margin-bottom: 3rem;
+    width: 100%;
+    border-bottom: 3px solid var(--secondary-color);
+    padding-bottom: 1.5rem;
+}
+
 .tagline {
-    font-size: 1.2rem;
+    font-size: 1.8rem; /* Larger */
     color: #666;
     font-style: italic;
 }
 
 .stats-grid, .impact-grid, .feature-highlight, .med-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
     width: 100%;
 }
 
 .stat-card, .impact-card, .highlight-item, .med-type {
     background: #f9f9f9;
-    padding: 1.5rem;
-    border-radius: 12px;
+    padding: 2.5rem;
+    border-radius: 20px;
     text-align: center;
     border: 1px solid #eee;
 }
 
 .stat-card h3 {
-    font-size: 2.5rem;
+    font-size: 3.5rem; /* Larger stats */
     color: var(--primary-color);
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.8rem;
 }
 
 .stat-card p {
-    font-size: 0.9rem;
+    font-size: 1.3rem;
     font-weight: 600;
 }
 
 ul li {
-    font-size: 1.2rem;
-    margin-bottom: 1.2rem;
-    padding-left: 2rem;
+    font-size: 1.6rem; /* Larger list items */
+    margin-bottom: 1.8rem;
+    padding-left: 3rem;
     position: relative;
     list-style: none;
 }
@@ -312,30 +340,30 @@ ul li::before {
 
 .warning-box {
     background: #fff3e0;
-    border-left: 5px solid var(--accent-color);
-    padding: 1.5rem;
-    margin-bottom: 2rem;
+    border-left: 8px solid var(--accent-color);
+    padding: 2.5rem;
+    margin-bottom: 3rem;
     width: 100%;
     text-align: center;
 }
 
 .warning-box p {
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-size: 2.2rem; /* Larger quote */
+    font-weight: 700;
     color: #e65100;
 }
 
 .download-stats {
     display: flex;
-    gap: 3rem;
-    margin-bottom: 2rem;
+    gap: 5rem;
+    margin-bottom: 3rem;
 }
 
 .stat-circle {
-    width: 200px;
-    height: 200px;
+    width: 280px; /* Larger circles */
+    height: 280px;
     border-radius: 50%;
-    border: 8px solid var(--primary-color);
+    border: 12px solid var(--primary-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -348,35 +376,41 @@ ul li::before {
 }
 
 .stat-circle .number {
-    font-size: 3rem;
-    font-weight: 700;
+    font-size: 4.5rem; /* Larger numbers */
+    font-weight: 800;
     color: var(--primary-color);
 }
 
 .stat-circle .label {
-    font-size: 0.8rem;
+    font-size: 1.1rem;
     text-transform: uppercase;
+    padding: 0 1rem;
 }
 
 .regional-summary {
-    margin-top: 1rem;
-    padding: 1rem;
+    margin-top: 2rem;
+    padding: 1.5rem;
     background: #fff8e1;
-    border-radius: 8px;
-    font-size: 1.1rem;
+    border-radius: 12px;
+    font-size: 1.5rem;
 }
 
 .data-box {
     background: #f1f8e9;
-    padding: 1.5rem;
-    border-radius: 15px;
-    border-left: 6px solid var(--primary-color);
+    padding: 2.5rem;
+    border-radius: 20px;
+    border-left: 10px solid var(--primary-color);
+    margin-bottom: 2rem;
+}
+
+.data-box h4 {
+    font-size: 1.6rem;
     margin-bottom: 1rem;
 }
 
 .data-value {
-    font-size: 2.5rem;
-    font-weight: 700;
+    font-size: 4rem; /* Massive values */
+    font-weight: 800;
     color: var(--primary-color);
 }
 
@@ -384,30 +418,32 @@ ul li::before {
     width: 100%;
     border-collapse: collapse;
     background: white;
-    border-radius: 10px;
+    border-radius: 16px;
     overflow: hidden;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 .data-table th, .data-table td {
-    padding: 1rem;
+    padding: 1.5rem;
     text-align: left;
     border-bottom: 1px solid #eee;
+    font-size: 1.3rem;
 }
 
 .data-table th {
     background: var(--primary-color);
     color: white;
-    font-weight: 600;
+    font-weight: 700;
+    font-size: 1.4rem;
 }
 
 .admob-metrics {
     display: flex;
     justify-content: space-around;
     background: #fafafa;
-    padding: 1rem;
-    border-radius: 15px;
-    margin-bottom: 1rem;
+    padding: 2rem;
+    border-radius: 24px;
+    margin-bottom: 2rem;
     width: 100%;
 }
 
@@ -417,9 +453,14 @@ ul li::before {
     align-items: center;
 }
 
+.m-label {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
 .m-value {
-    font-size: 1.8rem;
-    font-weight: 700;
+    font-size: 3rem; /* Larger metrics */
+    font-weight: 800;
     color: #1976d2;
 }
 
@@ -427,22 +468,101 @@ ul li::before {
     position: absolute;
     bottom: 3%;
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 .nav-btn {
-    padding: 0.6rem 1.8rem;
-    font-size: 1rem;
+    padding: 1rem 2.5rem; /* Larger buttons */
+    font-size: 1.3rem;
     border: none;
-    border-radius: 30px;
+    border-radius: 40px;
     background: var(--primary-color);
     color: white;
     cursor: pointer;
+    font-weight: 700;
+}
+
+/* Specialized Styles for High-Impact Slides */
+
+/* Slide 7: Critical Delay */
+#slide-7 .warning-box {
+    background: #fff0f0;
+    border-left: 12px solid #d32f2f;
+    padding: 3.5rem;
+}
+
+#slide-7 .warning-box p {
+    font-size: 3rem;
+    color: #b71c1c;
+    line-height: 1.2;
+}
+
+#slide-7 .impact-card h4 {
+    font-size: 2.2rem;
+    color: #d32f2f;
+    margin-bottom: 1rem;
+}
+
+#slide-7 .impact-card p {
+    font-size: 1.6rem;
+}
+
+/* Slide 8: Accuracy & Ease */
+#slide-8 .highlight-item {
+    background: #e8f5e9;
+    border-radius: 24px;
+    padding: 2rem !important;
+    border-left: 10px solid var(--primary-color);
+}
+
+#slide-8 .highlight-item h3 {
+    font-size: 2.4rem;
+    color: var(--primary-color);
+    margin-bottom: 0.8rem;
+}
+
+#slide-8 .highlight-item p {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+/* Slide 11: Medicine */
+#slide-11 .section-desc {
+    font-size: 1.8rem !important;
     font-weight: 600;
+    color: var(--secondary-color);
+    margin-bottom: 3rem !important;
+}
+
+#slide-11 .med-type {
+    background: #e3f2fd;
+    border-radius: 20px;
+    padding: 2.5rem;
+    border-left: 10px solid #1976d2;
+}
+
+#slide-11 .med-type h4 {
+    font-size: 2.2rem;
+    color: #1565c0;
+    margin-bottom: 0.8rem;
+}
+
+#slide-11 .med-type p {
+    font-size: 1.6rem;
+}
+
+#slide-11 .on-demand {
+    font-size: 2rem !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: #fff8e1;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    display: inline-block;
 }
 
 @media (max-width: 768px) {
-    .slide { height: auto; overflow-y: auto; padding: 1rem; }
+    .slide { height: auto; overflow-y: auto; padding: 1.5rem; }
     .split-layout, .ecosystem-container, .tools-list { flex-direction: column; }
     .media-extended-grid { grid-template-columns: 1fr; }
 }
